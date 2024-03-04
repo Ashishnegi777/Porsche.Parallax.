@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wdth,wght@98.8,100..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+	height: 100vh;
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: regular;
+	src: url(GeorgeTownRegular.otf);
+}
+
+@font-face {
+	font-family: frank;
+	src: url(FungkaCityRegularjEJd0.ttf);
+}
+@font-face {
+	font-family: sceag;
+	src: url(Sceageus.otf);
+}
+
+@font-face {
+	font-family: calcio;
+	src: url(calciodemo400.ttf);
+}
+@font-face {
+	font-family: romena_bold;
+	src: url(FontspringDEMOromenasemibold.otf);
+}
+@font-face {
+	font-family: romena;
+	src: url(FontspringDEMOromenaregular.otf);
+}
+
+@font-face {
+	font-family: cooper;
+	src: url(CooperHewittLight.otf);
+}
+
+@font-face {
+	font-family: Helvetica;
+	src: url(HelveticaCEBold.otf);
+}
+@font-face {
+	font-family: helR;
+	src: url(Helvetica.ttf);
+}
+@font-face {
+	font-family: helC;
+	src: url(HelveticaBoldCondensed.otf);
+}
+:root {
+	--box1-grad-top: rgba(28, 28, 29, 0.86);
+	--box1-grad-down: rgba(7, 7, 7, 0);
+	--base-color: rgba(23, 23, 23, 1);
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	color: white;
+	background: #222;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.section_one::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(contentfillbase.png) top center;
+	background-size: cover;
+	transform: translateZ(-1px) scale(2.2);
+	filter: blur(1px);
+}
+.section_one::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(basecarimage.png) top center;
+	background-size: cover;
+	transform: scale(1.1);
+}
+
+.section_one .text {
+	top: 5%;
+	transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, 5%);
+}
+.section_one,
+.section_two {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+.peragraph {
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	font-family: frank;
+}
+.title {
+	font-size: 70px;
+	color: rgba(145, 28, 30, 1);
+	transform: translate(43px, -49px);
+	word-spacing: 2px;
+}
+.wltp {
+	width: 26vw;
+	height: 14vh;
+	font-family: frank;
+	transform: translate(48px, -53px);
+	word-spacing: 2px;
+	font-size: 30px;
+}
+
+.section_two {
+	background: linear-gradient(var(--box1-grad-top), var(--box1-grad-down)),
+		url(DesktopWallpaper10.jpg);
+	font-family: frank;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* filter: saturate(0); */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.warp {
+	height: 76vh;
+	width: 82vw;
+	background-color: var(--base-color);
+	border-radius: 0.25rem;
+}
+.cont {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-block-start: 15vh;
+	height: 55vh;
+}
+
+img {
+	height: 44vh;
+	border-radius: 0.2rem;
+}
+.title2 {
+	font-size: 2.75rem;
+	font-family: romena_bold;
+}
+
+.pera {
+	width: 40vw;
+	font-family: cooper;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	font-size: 17px;
+	padding-block-start: 15px;
+	font-family: "Inter", sans-serif;
+}
+
+.image1 {
+	position: relative;
+	top: 6%;
+}
+
+.text {
+	top: 10%;
+	left: 50%;
+	position: absolute;
+	font-family: frank;
+	font-size: 8rem;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+		5px 5px 70px rgba(255, 255, 255, 0.5);
+	transform: scale(1, 1.1) translate(-50%);
+}
+
+/* section third */
+
+.section_third {
+	background: linear-gradient(var(--box1-grad-top), var(--box1-grad-down)),
+		url(MobileWallpaper2.jpg);
+	font-family: frank;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -868px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: inherit;
+}
+
+.warp_third {
+	height: 76vh;
+	width: 82vw;
+	background-color: var(--base-color);
+	border-radius: 0.25rem;
+}
+
+.cont_third {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-around;
+	padding-block-start: 15vh;
+	height: 55vh;
+}
+
+.title_third {
+	font-size: 2.25rem;
+	font-family: romena_bold;
+	text-align: end;
+}
+
+.pera_third {
+	width: 40vw;
+	font-family: cooper;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	font-size: 17px;
+	padding-block-start: 15px;
+	text-align: end;
+	font-family: "Inter", sans-serif;
+}
+
+.image2{
+	background-image: url(MobileWallpaper5.jpg);
+	position: relative;
+	top: 6%;
+	height: 44vh;
+	width: 14%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.image5 {
+	background-image: url(MobileWallpaper6.jpg);
+	position: relative;
+	top: 6%;
+	height: 44vh;
+	width: 14%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* fourth section */
+
+.image-in {
+	height: 175px;
+}
+
+.sectoin-fourth {
+	height: inherit;
+	background-color: var(--base-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(219, 222, 224);
+	font-family: Helvetica;
+	letter-spacing: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-block-start: 12.75rem;
+}
+/* .helvatica{
+	font-family: Helvetica;
+	letter-spacing: 2px;
+} */
+.inside-the-pera {
+	font-family: helR;
+	letter-spacing: 1px;
+	padding-block-start: 1.25rem;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-weight: 600;
+	color: #d9d9dccc;
+}
+
+.warp-fourth {
+	height: 82vh;
+	width: 72vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+.one,
+.two {
+	display: flex;
+	align-items: center;
+}
+
+.content-one {
+	/* width: ; */
+	padding-inline-start: 80px;
+	padding-block-end: 20px;
+}
+
+/* section five */
+
+/* .img-png{
+	width: 25vw;
+} */
+.Porsche {
+	height: 50vh;
+}
+.section-five {
+	background-color: var(--base-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 80px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: helvetica;
+	letter-spacing: 2px;
+	height: inherit;
+}
+.carpe {
+	min-width: 20vw;
+	width: 40vw;
+}
+.carpe-title {
+	font-weight: 900;
+	font-size: 7.75vh;
+	padding-bottom: 1.5rem;
+}
+.carpe-pera {
+	font-weight: 500;
+	font-size: 1.25rem;
+	font-family: helR;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffffc0;
+	font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* secriton six */
+.section-six {
+	background: var(--base-color);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: inherit;
+	overflow: hidden;
+}
+
+.dash {
+	font-family: helvetica;
+	font-size: 2.25rem;
+	width: 32vw;
+	position: relative;
+	left: -23%;
+	top: 10%;
+}
+
+.png-car {
+	/* height: 500px;
+	width: 500px;
+	object-fit: cover;
+	object-position: 100%; */
+	position: relative;
+	top: 0%;
+	left: 30%;
+	height: 117vh;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+	.warp {
+		width: 85vw;
+		height: 680px;
+		border-radius: 0.75rem;
+	}
+	.section_two{
+			background: rgb(27, 26, 26);
+		}
+	.cont {
+		flex-direction: column;
+		padding-block-start: 5vh;
+   	 	height: inherit;
+	}
+	.title2,
+	h1 {
+		font-size: 1.75rem;
+
+	}
+	.pera{
+		font-size: 12px;
+		font-size: 0.75rem;
+   		height: 70%;
+    	width: 63vw;
+	}
+
+	.image5 {
+		background-image: url(subjectextenedDesktopWallpaper7.png);
+		width: 81vw;
+    	height: 29vh;
+	}
+
+	
+	.warp_third {
+		width: 85vw;
+		height: 680px;
+		border-radius: 0.75rem;
+	}
+	.section_third{
+			background: rgb(27, 26, 26);
+		}
+	.cont_third{
+		flex-direction: column;
+		padding-block-start: 5vh;
+   	 	height: inherit;
+			padding-inline: 2rem;
+	}
+	.title_third,
+	h2 {
+		font-size: 1.75rem;
+		text-align: start;
+
+	}
+	.pera_third{
+		font-size: 12px;
+		font-size: 0.75rem;
+   		height: 70%;
+    	width: 63vw;
+		text-align: start;
+	}
+
+	.image2 {
+		background-image: url(anotherDesktopWallpaper1.png);
+		width: 81vw;
+    	height: 29vh;
+		transform: translateY(-38px);
+	}
+
+
+	/* section fourth */
+
+
+	.sectoin-fourth{
+		padding-block-start:0;
+		font-family: "Inter", sans-serif;
+		align-items: flex-start;
+		padding-inline: 10vw;
+	}
+	.image-inside-content{
+		visibility: collapse;
+	}
+
+	.warp-fourth{
+		width: 85vw;
+		
+
+	}
+	.content-one{
+		padding-inline-start:0;
+		padding-block-end: 0;
+	}
+
+	.one,.two{
+		display: flex;
+		flex-direction: column;
+	}
+	.inside-the-pera{
+		font-size: 0.85rem;
+		letter-spacing: 2px;
+		font-weight: 400;
+	}
+
+
+
+
+
+
+	/* section five */
+
+	.section-five{
+		flex-direction: column;
+		padding: 0;
+	
+	}
+	.carpe-title{
+		font-size: 2rem;
+		word-spacing: 2px;
+	}
+	.carpe {
+		width: 76vw;
+	}
+	.Porsche {
+		height: 34vh;
+	}
+
+	.carpe-pera{
+		font-size: 0.75rem;
+		/* font-family: romena_bold; */
+	}
+
+	/* section-six */
+
+	.section-six{
+		height: 87vh;
+	}
+	.png-car{
+		position: relative;
+		top: 50%;
+		left: 28%;
+		height: 40vh;
+	}
+	.dash{
+		font-family: helvetica;
+		font-size: 2.25rem;
+		width: 78vw;
+		position: relative;
+		left: 0;
+		top: 40%;
+	}
+
+	.close{
+			font-size: 2.25rem;
+
+	}
+
+}
